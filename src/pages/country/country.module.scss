@@ -1,0 +1,134 @@
+.div {
+    width: 80%;
+
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+
+
+.overview {
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.05);
+    background-color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+
+    img {
+        width: 10rem;
+        height: 7.25rem;
+        border-radius: 4px;
+    }
+
+    &_name {
+        text-align: center;
+        font-size: 1.75rem;
+        margin-bottom: 0;
+    }
+
+    &_region {
+        text-align: center;
+        font-size: 14px;
+        font-weight: 300;
+        margin-top: 4px;
+        margin-bottom: 24px;
+    }
+
+    &_container {
+        display: flex;
+        justify-content: space-around;
+        text-align: center;
+        width: 100%;
+
+        &_population, &_area {
+            &_label {
+                color: #124a63;
+            }    
+        }
+    }
+}
+
+
+.details {
+    background-color: white;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+
+    h4 {
+        padding: 20px;
+        padding-bottom: 0;
+
+        margin: 0;
+    }
+
+    &_row {
+        display: flex;
+        justify-content: space-between;
+
+        padding: 20px;
+        border-bottom: 1px solid #E0E0E0;
+
+        &_label {
+            color: #b3c5cd;
+        }
+    }
+
+    &_neighbours {
+        padding: 18px;
+
+        &_label {
+            color: #124a63;
+            margin-bottom: 20px;
+        }
+
+        &_container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+            gap: 24px;
+
+            &_country {
+                text-align: center;
+    
+                img {
+                    width: 5.5rem;
+                    height: 3.75rem;
+                }
+            }    
+        }
+    }
+}
+
+
+
+.div {
+    display: grid;
+    grid-template-columns: repeat(1px, 1fr);
+    gap: 24px;
+}
+
+
+
+@media screen and (min-width: 670px) {
+    .div {
+        display: grid;
+        grid-template-columns: repeat(120px, 1fr);
+        gap: 24px;
+
+        .left {
+            grid-column: 1 / span 4;
+        }
+
+        .right {
+            grid-column: 5 / span 8;
+        }
+    }
+}
+@media screen and (max-width: 800px) {
+    .div {
+        width: 100%;
+    }
+}

@@ -1,0 +1,39 @@
+.conatiner {
+    padding: 24px;
+    height: 100vh;
+
+    display: grid;
+    grid-template-rows: auto 1r auto;
+
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 32px;
+    margin-top: 32px;
+
+    svg {
+        cursor: pointer;
+    }
+}
+  
+  
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2px;
+}
+
+
+.footer {
+    text-align: center;
+    font-size:  0.75rem;
+    margin-bottom: 32px;
+    margin-top: 32px;
+}

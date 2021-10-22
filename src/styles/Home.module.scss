@@ -1,0 +1,38 @@
+.div {
+    width: 80%;
+
+    padding-left: 25px;
+    padding-right: 25px;
+
+    &_container {
+        .counts {
+            margin: 12px 0;
+            color: #b3c5cd;
+        }
+    }
+}
+
+
+
+@media screen and (min-width: 800px) {
+    .div {
+        &_container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            
+            div {       //input
+                flex: 4;
+            }
+        
+            .counts {
+                flex: 1;
+            }
+        }    
+    }
+}
+@media screen and (max-width: 800px) {
+    .div {
+        width: 100%;
+    }
+}
